@@ -1,0 +1,196 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red187\green191\blue201;}
+{\*\expandedcolortbl;;\cssrgb\c78039\c79608\c82745;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Musician Survey</title>\
+    <style>\
+        body \{\
+            font-family: Arial, sans-serif;\
+            max-width: 800px;\
+            margin: 0 auto;\
+            padding: 20px;\
+        \}\
+\
+        label \{\
+            display: block;\
+            margin-bottom: 5px;\
+        \}\
+\
+        textarea \{\
+            width: 100%;\
+            padding: 8px;\
+            margin-bottom: 15px;\
+            box-sizing: border-box;\
+            resize: vertical; /* Allows vertical resizing of the textarea */\
+        \}\
+\
+        button \{\
+            background-color: #4CAF50;\
+            color: white;\
+            padding: 10px 15px;\
+            border: none;\
+            border-radius: 4px;\
+            cursor: pointer;\
+        \}\
+\
+        button:hover \{\
+            background-color: #45a049;\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <h1>Musician Survey</h1>\
+    <p>Please take a moment to fill out the following survey:</p>\
+\
+    <form action="submit_survey.php" method="post">\
+        <!-- Questions -->\
+\
+        <!-- 1-10 -->\
+        <label for="age">1. Age:</label>\
+        <textarea id="age" name="age" rows="4" required></textarea>\
+\
+        <label for="gender">2. Gender:</label>\
+        <textarea id="gender" name="gender" rows="4" required></textarea>\
+\
+        <label for="genre">3. Genre(s) of Music:</label>\
+        <textarea id="genre" name="genre" rows="4" required></textarea>\
+\
+        <label for="experienceLevel">4. Level of Experience (e.g., amateur, emerging artist, professional):</label>\
+        <textarea id="experienceLevel" name="experienceLevel" rows="4" required></textarea>\
+\
+        <label for="recordingLocation">5. Where do you typically record your music? (home studio, professional studio, other)</label>\
+        <textarea id="recordingLocation" name="recordingLocation" rows="4" required></textarea>\
+\
+        <label for="recordingLocationFactors">6. What factors influence your choice of recording location?</label>\
+        <textarea id="recordingLocationFactors" name="recordingLocationFactors" rows="4" required></textarea>\
+\
+        <label for="mobileRecordingInterest">7. Are you interested in mobile recording services for on-location sessions?</label>\
+        <textarea id="mobileRecordingInterest" name="mobileRecordingInterest" rows="4" required></textarea>\
+\
+        <label for="contentUsage">8. Do you currently use professional photos and videos to promote your music?</label>\
+        <textarea id="contentUsage" name="contentUsage" rows="4" required></textarea>\
+\
+        <label for="visualContentImportance">9. How important is visual content (photos, videos) in your overall brand strategy?</label>\
+        <textarea id="visualContentImportance" name="visualContentImportance" rows="4" required></textarea>\
+\
+        <label for="beneficialVisualContent">10. What types of visual content do you believe would benefit your music career the most?</label>\
+        <textarea id="beneficialVisualContent" name="beneficialVisualContent" rows="4" required></textarea>\
+\
+        <!-- 11-20 -->\
+        <label for="audioRecordingEquipment">11. What types of audio recording equipment do you currently use?</label>\
+        <textarea id="audioRecordingEquipment" name="audioRecordingEquipment" rows="4" required></textarea>\
+\
+        <label for="equipmentFeatures">12. Are there specific features or technologies you look for in recording equipment?</label>\
+        <textarea id="equipmentFeatures" name="equipmentFeatures" rows="4" required></textarea>\
+\
+        <label for="recordingFormat">13. Preferred recording format (analog, digital, both)?</label>\
+        <textarea id="recordingFormat" name="recordingFormat" rows="4" required></textarea>\
+\
+        <label for="postProductionServices">14. What audio post-production services do you find most valuable (mixing, mastering, etc.)?</label>\
+        <textarea id="postProductionServices" name="postProductionServices" rows="4" required></textarea>\
+\
+        <label for="recordingChallenges">15. What challenges do you face when it comes to recording and creating content for your music?</label>\
+        <textarea id="recordingChallenges" name="recordingChallenges" rows="4" required></textarea>\
+\
+        <label for="painPoints">16. Are there specific pain points you encounter with existing recording and content creation services?</label>\
+        <textarea id="painPoints" name="painPoints" rows="4" required></textarea>\
+\
+        <label for="budgetAverage">17. How much, on average, do you budget for audio recording and content creation services?</label>\
+        <textarea id="budgetAverage" name="budgetAverage" rows="4" required></textarea>\
+\
+        <label for="affordabilityVsFeatures">18. Are you more likely to choose a service based on affordability or additional features?</label>\
+        <textarea id="affordabilityVsFeatures" name="affordabilityVsFeatures" rows="4" required></textarea>\
+\
+        <label for="paymentModelPreference">19. Do you prefer one-time payment options or subscription-based models for content services?</label>\
+        <textarea id="paymentModelPreference" name="paymentModelPreference" rows="4" required></textarea>\
+\
+        <label for="bundledPackagesInterest">20. Are you interested in bundled packages that include both audio recording and content creation?</label>\
+        <textarea id="bundledPackagesInterest" name="bundledPackagesInterest" rows="4" required></textarea>\
+\
+        <!-- 21-30 -->\
+        <label for="mobileRecordingInterestLive">21. Would you be interested in mobile recording services for live performances or unconventional locations?</label>\
+        <textarea id="mobileRecordingInterestLive" name="mobileRecordingInterestLive" rows="4" required></textarea>\
+\
+        <label for="mobileRecordingFeatures">22. What features would you expect from a mobile recording service?</label>\
+        <textarea id="mobileRecordingFeatures" name="mobileRecordingFeatures" rows="4" required></textarea>\
+\
+        <label for="contentIntegrationImportance">23. How important is the integration of content (audio, photos, videos) into your marketing strategy?</label>\
+        <textarea id="contentIntegrationImportance" name="contentIntegrationImportance" rows="4" required></textarea>\
+\
+        <label for="contentPromotionGuidanceInterest">24. Are you interested in guidance on how to effectively use content to promote your music?</label>\
+        <textarea id="contentPromotionGuidanceInterest" name="contentPromotionGuidanceInterest" rows="4" required></textarea>\
+\
+        <label for="collaborativeProjectsInterest">25. Would you be interested in collaborative projects with other musicians facilitated by a recording and content creation service?</label>\
+        <textarea id="collaborativeProjectsInterest" name="collaborativeProjectsInterest" rows="4" required></textarea>\
+\
+        <label for="networkingImportance">26. How important is networking within the music industry to you?</label>\
+        <textarea id="networkingImportance" name="networkingImportance" rows="4" required></textarea>\
+\
+        <label for="communicationPreference">27. How do you prefer to communicate with recording and content service providers? (email, phone, in-person meetings)</label>\
+        <textarea id="communicationPreference" name="communicationPreference" rows="4" required></textarea>\
+\
+        <label for="industryTrendsAwareness">28. Are you aware of current trends in audio recording and content creation for musicians?</label>\
+        <textarea id="industryTrendsAwareness" name="industryTrendsAwareness" rows="4" required></textarea>\
+\
+        <label for="industryTrendsUpdateMethod">29. How do you stay updated on industry trends?</label>\
+        <textarea id="industryTrendsUpdateMethod" name="industryTrendsUpdateMethod" rows="4" required></textarea>\
+\
+        <label for="feedbackLikelihood">30. How likely are you to provide feedback to a recording and content service provider?</label>\
+        <textarea id="feedbackLikelihood" name="feedbackLikelihood" rows="4" required></textarea>\
+\
+        <!-- 31-40 -->\
+        <label for="improvementsSuggested">31. What improvements or additional services would you like to see in the industry?</label>\
+        <textarea id="improvementsSuggested" name="improvementsSuggested" rows="4" required></textarea>\
+\
+        <label for="socialMediaUsage">32. Which social media platforms do you actively use to promote your music?</label>\
+        <textarea id="socialMediaUsage" name="socialMediaUsage" rows="4" required></textarea>\
+\
+        <label for="socialMediaImportance">33. How important is social media presence in your overall promotional strategy?</label>\
+        <textarea id="socialMediaImportance" name="socialMediaImportance" rows="4" required></textarea>\
+\
+        <label for="livePerformanceFrequency">34. Do you frequently perform live?</label>\
+        <textarea id="livePerformanceFrequency" name="livePerformanceFrequency" rows="4" required></textarea>\
+\
+        <label for="liveRecordingInterest">35. Would you be interested in live recording services for your performances?</label>\
+        <textarea id="liveRecordingInterest" name="liveRecordingInterest" rows="4" required></textarea>\
+\
+        <label for="educationalResourcesInterest">36. Are you interested in educational resources provided by recording and content creation services (e.g., workshops, tutorials)?</label>\
+        <textarea id="educationalResourcesInterest" name="educationalResourcesInterest" rows="4" required></textarea>\
+\
+        <label for="educationalTopicsInterest">37. What specific topics would you like to learn more about?</label>\
+        <textarea id="educationalTopicsInterest" name="educationalTopicsInterest" rows="4" required></textarea>\
+\
+        <label for="currentServicesSatisfaction">38. How satisfied are you with your current audio recording and content creation services?</label>\
+        <textarea id="currentServicesSatisfaction" name="currentServicesSatisfaction" rows="4" required></textarea>\
+\
+        <label for="appreciatedFeatures">39. What features or services do you appreciate the most?</label>\
+        <textarea id="appreciatedFeatures" name="appreciatedFeatures" rows="4" required></textarea>\
+\
+        <label for="futureGoals">40. What are your primary goals as a musician in the next 1-3 years?</label>\
+        <textarea id="futureGoals" name="futureGoals" rows="4" required></textarea>\
+\
+        <!-- 41-42 -->\
+        <label for="futureGoalsHelp">41. How can recording and content creation services help you achieve these goals?</label>\
+        <textarea id="futureGoalsHelp" name="futureGoalsHelp" rows="4" required></textarea>\
+\
+        <label for="additionalComments">42. Additional Comments:</label>\
+        <textarea id="additionalComments" name="additionalComments" rows="4"></textarea>\
+\
+        <button type="submit">Submit Survey</button>\
+    </form>\
+\
+</body>\
+</html>\
+}
